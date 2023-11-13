@@ -33,3 +33,11 @@ Android devices.
 - Copy the backend folder to the htdocs folder in XAMPP
 - Create a database named landlord
 - Import the landlord.sql file to the database
+
+### Screenshots
+![alt text](screenshots/Screenshot_20231111-204938_Landlord.jpg "Screen 1")
+![alt text](screenshots/Screenshot_20231111-205004_Landlord.jpg "Screen 2")
+![alt text](screenshots/Screenshot_20231111-205012_Landlord.jpg "Screen 3")
+![alt text](screenshots/Screenshot_20231111-205130_Landlord.jpg "Screen 4")
+![alt text](screenshots/Screenshot_20231111-205136_Landlord.jpg "Screen 5")
+![alt text](screenshots/Screenshot_20231111-205145_Landlord.jpg "Screen 6")
