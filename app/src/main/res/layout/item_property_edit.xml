@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/custom_button_transparent_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/propertyNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/merriweather_light"
+        android:text="Property Name"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/viewPropertyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/faint_white"
+        android:contentDescription="View Property"
+        android:padding="5dp"
+        android:src="@android:drawable/ic_menu_view" />
+
+    <ImageButton
+        android:id="@+id/managePropertyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/french_blue"
+        android:contentDescription="Manage Property"
+        android:padding="5dp"
+        android:src="@android:drawable/ic_menu_manage" />
+
+    <ImageButton
+        android:id="@+id/deletePropertyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/rich_black"
+        android:contentDescription="Delete Property"
+        android:padding="5dp"
+        android:src="@android:drawable/ic_delete" />
+
+</LinearLayout>

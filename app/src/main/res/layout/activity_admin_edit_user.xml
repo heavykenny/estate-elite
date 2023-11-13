@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:padding="32dp"
+    tools:context=".activities.AdminEditUserActivity">
+
+    <TextView
+        android:id="@+id/editUserTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/merriweather_light"
+        android:text="Edit User"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editUserTitle"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/merriweather_light_italic"
+        android:hint="First Name"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstNameEditText"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/merriweather_light_italic"
+        android:hint="Last Name"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastNameEditText"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/merriweather_light_italic"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/editEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/merriweather_light_italic"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/roleSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editEmailEditText"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roleSpinner"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/merriweather_light_italic"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneEditText"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/merriweather_light_italic"
+        android:hint="Address"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/saveChangesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressEditText"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_button_background"
+        android:fontFamily="@font/merriweather_light"
+        android:padding="12dp"
+        android:text="Save Changes"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

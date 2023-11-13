@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/faint_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edittext_background"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/merriweather_light_italic"
+        android:hint="Search for properties... (name, location)"
+        android:padding="15dp"
+        android:textSize="13sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Spinner
+            android:id="@+id/sortSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/oxford_blue_a"
+            android:fontFamily="@font/merriweather_light_italic"
+            android:padding="10dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/totalPropertiesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/merriweather_light_italic"
+            android:text="120 Properties"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/filterButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/oxford_blue_a"
+            android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+            android:fontFamily="@font/merriweather_light"
+            android:text="Filter"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/mapListToggleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/oxford_blue_a"
+            android:drawableLeft="@android:drawable/ic_dialog_map"
+            android:fontFamily="@font/merriweather_light"
+            android:text="List"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible" />
+
+    <include layout="@layout/layout_bottom_navigation" />
+
+</LinearLayout>

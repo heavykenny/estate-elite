@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:padding="32dp"
+    tools:context=".activities.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/appIconImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_corner_background"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ee_logo" />
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appIconImageView"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/merriweather_light_italic"
+        android:text="Welcome to Estate Elite"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/fullnameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/editbox_background"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/merriweather_light_italic"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullnameEditText"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_edittext_background"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/merriweather_light_italic"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/registerPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_edittext_background"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/merriweather_light_italic"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerPasswordEditText"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_button_background"
+        android:fontFamily="@font/merriweather_light"
+        android:padding="12dp"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerButton"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/merriweather_light_italic"
+        android:text="Already have an account? Login"
+        android:textColor="@color/black" />
+
+</LinearLayout>

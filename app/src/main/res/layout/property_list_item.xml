@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_button_transparent_background"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/propertyImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/house" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/oxford_blue"
+                    android:id="@+id/propertyNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/merriweather_black"
+                    android:text="Property Name"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/propertyLocationTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/merriweather_light_italic"
+                    android:text="Location: London" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/propertyPriceTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:fontFamily="@font/merriweather_black"
+                android:gravity="center"
+                android:text="£200,000"
+                android:textStyle="bold"
+                android:background="@drawable/custom_button_transparent_background"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/saveIconImageView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="Save"
+                android:fontFamily="@font/merriweather_light_italic"
+                android:padding="10dp"
+                android:src="@drawable/ic_save_black" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/bedroomTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/merriweather_light_italic"
+                android:text="3 Beds" />
+
+            <TextView
+                android:id="@+id/bathroomTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/merriweather_light_italic"
+                android:text="2 Baths" />
+
+            <TextView
+                android:id="@+id/rentSaleLeaseTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/merriweather_light_italic"
+                android:text="For Rent" />
+
+            <TextView
+                android:id="@+id/dateListedTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/merriweather_light_italic"
+                android:gravity="center|end"
+                android:text="Listed: Jan 1, 2023" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/landlordNameTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/merriweather_light"
+                android:gravity="center|start"
+                android:text="Landlord: John Doe"
+                android:textColor="@color/oxford_blue"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/callIconImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="Call"
+                android:focusable="true"
+                android:padding="8dp"
+                android:src="@drawable/ic_call" />
+
+            <ImageView
+                android:id="@+id/emailIconImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="Email"
+                android:focusable="true"
+                android:padding="8dp"
+                android:src="@drawable/ic_email" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/custom_button_transparent_background"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/userOrLandlordNameTextView"
+        android:layout_width="0dp"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:fontFamily="@font/merriweather_light"
+        android:layout_height="wrap_content"
+        android:text="User Fullname"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/editUserOrLandlordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/faint_white"
+        android:contentDescription="Edit User"
+        android:padding="5dp"
+        android:src="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:padding="5dp"
+        android:id="@+id/deleteUserOrLandlordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/rich_black"
+        android:contentDescription="Delete User"
+        android:src="@android:drawable/ic_delete" />
+
+</LinearLayout>

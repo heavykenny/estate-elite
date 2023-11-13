@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".activities.AdminAddPropertyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/addPropertyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/merriweather_light"
+            android:text="Add Property"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addPropertyTitle"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/merriweather_light_italic"
+            android:hint="Property Name"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/locationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameEditText"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/merriweather_light_italic"
+            android:hint="Location"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/priceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locationEditText"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/merriweather_light_italic"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/imagePathButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priceEditText"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/custom_button_background"
+            android:fontFamily="@font/merriweather_light_italic"
+            android:text="Select Image"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/typeIdSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imagePathButton"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:prompt="@string/property_type_prompt" />
+
+
+        <EditText
+            android:id="@+id/bedroomsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeIdSpinner"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/merriweather_light_italic"
+            android:hint="Bedrooms"
+            android:inputType="number"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/bathroomsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bedroomsEditText"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/merriweather_light_italic"
+            android:hint="Bathrooms"
+            android:inputType="number"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/propertyStatusSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bathroomsEditText"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:prompt="@string/property_status_prompt" />
+
+        <EditText
+            android:id="@+id/addressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/propertyStatusSpinner"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/merriweather_light_italic"
+            android:hint="Address"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/pointsOfInterestEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressEditText"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/merriweather_light_italic"
+            android:hint="Points of Interest"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pointsOfInterestEditText"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/merriweather_light_italic"
+            android:hint="Description"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/latitudeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionEditText"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/merriweather_light_italic"
+            android:hint="Latitude"
+            android:inputType="numberDecimal"
+            android:textSize="15sp" />
+
+        <!-- Longitude -->
+        <EditText
+            android:id="@+id/longitudeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/latitudeEditText"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/merriweather_light_italic"
+            android:hint="Longitude"
+            android:inputType="numberDecimal"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/addPropertyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/longitudeEditText"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button_background"
+            android:fontFamily="@font/merriweather_light"
+            android:padding="12dp"
+            android:text="Add Property"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</ScrollView>

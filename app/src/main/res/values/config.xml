@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    change the value of base_api_url to your local ip address-->
+    <string name="base_api_url">
+        http://192.168.0.144/landlord/api
+    </string>
+
+    <string name="google_maps_key" translatable="false">AIzaSyB5mv5cf7R2OP_km_IsfdFjeqrERSZMbec</string>
+</resources>

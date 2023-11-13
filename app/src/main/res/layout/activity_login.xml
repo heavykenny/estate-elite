@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:padding="32dp"
+    tools:context=".activities.LoginActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_corner_background"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ee_logo"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/merriweather_light_italic"
+        android:text="Welcome to Estate Elite"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_edittext_background"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/merriweather_light_italic"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_edittext_background"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/merriweather_light_italic"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_button_background"
+        android:fontFamily="@font/merriweather_light"
+        android:padding="12dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/registerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/merriweather_light_italic"
+        android:text="Don't have an account? Register"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</LinearLayout>
